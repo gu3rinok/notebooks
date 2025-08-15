@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function loadNotebooksData() {
-    fetch('./notebooks.json')
+    fetch('./data/notebooks.json')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -237,4 +237,5 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
 

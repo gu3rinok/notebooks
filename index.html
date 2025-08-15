@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Comparador de Notebooks</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Comparador de Notebooks</h1>
+    <div class="controls">
+      <div class="filter-section">
+        <label for="profile-filter">Filtrar por Perfil:</label>
+        <select id="profile-filter">
+          <option value="all">Todos os Perfis</option>
+          <option value="Gamer">Gamer</option>
+          <option value="Editor de Vídeo">Editor de Vídeo</option>
+          <option value="Programador">Programador</option>
+          <option value="BI">Analista de BI</option>
+          <option value="Estudante">Estudante</option>
+          <option value="Escritório">Trabalho de Escritório</option>
+          <option value="Design">Design Gráfico</option>
+        </select>
+      </div>
+      <div class="compare-section">
+        <button id="compare-btn">Comparar Selecionados (0)</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="notebooks-container" class="grid">
+      <div class="loading">Carregando notebooks...</div>
+    </div>
+    
+    <div id="comparison-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Comparação Detalhada</h2>
+        <div id="comparison-results"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
